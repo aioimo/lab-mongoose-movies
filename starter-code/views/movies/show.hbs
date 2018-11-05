@@ -1,0 +1,14 @@
+<h3>Show Movie Details</h3>
+
+<strong>Title: </strong>{{movie.title}} <br>
+<strong>Genre: </strong> {{movie.genre}} <br>
+<strong>Plot: </strong> {{movie.plot}} <br>
+<strong>Celebrities: </strong> 
+{{#each links}}
+{{this._celebrity.name}} ,
+{{/each}}
+<br>
+
+<a href="/movies/{{movie._id}}/edit">Edit</a>
+<a href="/movies/{{movie._id}}/add-celebrity">Add Actor</a>
+

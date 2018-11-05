@@ -1,0 +1,15 @@
+<h2>Add Movie</h2>
+
+<form action="/celebrities/add-movie" method="POST">
+
+Movie: <select name="_movie">
+  {{#each movies}}
+  <option value="{{this._id}}" name="movie">{{this.title}}</option>
+    {{/each}}
+</select>
+
+  Celebrity: <select name="_celebrity">
+    <option value="{{celebrity._id}}" name="celebrity">{{celebrity.name}}</option>
+  </select> <br>
+  <button type="submit">Create Link</button>
+</form>
